@@ -14,3 +14,5 @@ dp.add_handler(CommandHandler("help", help_command))
 dp.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
 updater.start_polling()
 updater.idle()
+if __name__ == '__main__':
+main()
